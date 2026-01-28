@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.2.1" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/semver_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/semver/semver_{{ version }}.tar.gz
-  sha256: becfaa6c422970298916f5157539bf8510ba26c4000b1bf51a3d32a1ab9f9783
+  sha256: 8abd0e322e3d7e4e8e16f11dbb8aae96d07524466b6c0fd200acb3e9dec2fe2d
 
 build:
-  number: 4
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -49,9 +49,7 @@ about:
   home: https://github.com/johndharrison/semver
 
   license: MIT
-  summary: Tools and functions for parsing, rendering and operating on semantic version strings.
-    Semantic versioning is a simple set of rules and requirements that dictate how version
-    numbers are assigned and incremented as outlined at <http://semver.org>.
+  summary: Tools and functions for parsing, rendering and operating on semantic version strings. Semantic versioning is a simple set of rules and requirements that dictate how version numbers are assigned and incremented as outlined at <http://semver.org>.
 
   license_family: MIT
   license_file:
